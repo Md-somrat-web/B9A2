@@ -349,6 +349,7 @@ header ul li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  margin-top: 20px;
 }
 /* .icon i {
   color: #ff5400;
@@ -382,4 +383,45 @@ header ul li a:hover {
 .Price {
   color: #ff5400;
 }
+.full-text2 {
+  background-color: #ffffffcc;
+  padding: 20px;
+
+  border-radius: 16px;
+  position: absolute;
+  left: 30px;
+  top: 80px;
+}
+.btn1 {
+  background-color: #ff5400;
+  color: #fff;
+  border: none;
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  margin: auto;
+}
+.btn-container {
+  text-align: center;
+  margin-top: 49px;
+}
+
 /* discount area end */
+/*  Perfect Place start */
+.discribtion li {
+  font-weight: bold;
+  line-height: 29px;
+}
+.perfect-place {
+  display: flex;
+  margin-top: 50px;
+  gap: 28px;
+}
+.photo7 img {
+  width: 610px;
+  height: 424px;
+}
+
+/*  Perfect Place end */
