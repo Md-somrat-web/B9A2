@@ -1,89 +1,385 @@
-body{
-    font-family: "Mulish", sans-serif;
-margin: 0;
-padding: 0;
-overflow-x: hidden;
+body {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 .container {
-margin: 0 135px;
+  margin: 0 135px;
 }
 header {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 header nav {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 header ul {
-    display: flex;
+  display: flex;
 }
 header ul li {
-    list-style: none;
+  list-style: none;
 }
 
 header ul li a {
-    color: #424247;
-    padding: 22px;
-    text-decoration: none;
-    font-size: 18px;
+  color: #424247;
+  padding: 22px;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 header ul li a:hover {
-color: #FF5400;
-font-weight: bold;
+  color: #ff5400;
+  font-weight: bold;
 }
-
 
 /* banner area style start */
-.banner-bg{
-    background-image: url(/image/banner.png);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    
+.banner-bg {
+  background: url(/image/banner.png);
+  /* background-blend-mode: overlay; */
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 16px;
+  position: relative;
 }
-.banner-text h1{
-    font-size: 64px;
-    font-weight: 800;
+
+.banner-bg .overly {
+  background: linear-gradient(
+    90deg,
+    rgba(19, 19, 24, 1) 0%,
+    rgba(19, 19, 24, 1) 100%
+  );
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.banner-bg .content {
+  z-index: 2;
+}
+.banner-text h1 {
+  font-size: 64px;
+  font-weight: 800;
+}
+
+.tour-form {
+  background-color: #ffffff4d;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  gap: 24px;
+}
+
+.tour-form input {
+  background-color: #fff;
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  border: none;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.tour-form input:focus-visible {
+  border: 0;
+  outline: 0;
+}
+
+.tour-form select {
+  background-color: #fff;
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  border: none;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.tour-form select:focus-visible {
+  border: 0;
+  outline: 0;
+}
+
+.tour-form .btn {
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* banner area style end */
-/* tour area style start */
-.tour-text h2{
-    font-size: 40px;
-    font-weight: 800;
 
+/* tour area style start */
+.tour-text h2 {
+  font-size: 40px;
+  font-weight: 800;
 }
-.tour-text ul li{
-    padding-bottom: 16px;
+.tour-text ul li {
+  padding-bottom: 16px;
 }
-.subtittle{
-    padding-bottom: 24px;
+.subtittle {
+  padding-bottom: 24px;
 }
-.tour-section{
-    display: flex;
-    padding: 50px 0;
-    gap: 53px;
+.tour-section {
+  display: flex;
+  padding: 50px 0;
+  gap: 53px;
 }
-.btn{
-    background-color: #FF5400;
-    color: #fff;
-    border: none;
-    width: 174px;
-    height: 52px;
-    border-radius: 8px;
-    font-size: 20px;
-    font-weight: 700;
+.btn {
+  background-color: #ff5400;
+  color: #fff;
+  border: none;
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
 }
-.tour-section{
-    padding: 100px 0;
+.tour-section {
+  padding: 100px 0;
 }
 /* tour area style end */
+/* Destination area start */
+.tittel h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+.tittel p {
+  text-align: center;
+  font-size: 16px;
+}
+.photo1 img {
+  width: 573px;
+  height: 300px;
+  border-radius: 16px;
+  color: #13131833;
+}
+.pho {
+  display: flex;
+  gap: 24px;
+}
+.main {
+  display: flex;
+  gap: 24px;
+  padding-top: 24px;
+}
+.photo1 {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.text1 {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.photo {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.photo img {
+  width: 573px;
+  height: 300px;
+  color: #fff;
+}
+.text {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.photo2 {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.text2 {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.photo2 img {
+  width: 374px;
+  height: 286px;
+}
+.photo3 {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.text3 {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.photo3 img {
+  width: 474px;
+  height: 286px;
+}
+.photo4 img {
+  width: 274px;
+  height: 286px;
+}
+.photo4 {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.text4 {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.photo5 img {
+  width: 473px;
+  height: 300px;
+}
+.main2 {
+  display: flex;
+  padding-top: 24px;
+  gap: 24px;
+}
+.photo5 {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.text5 {
+  position: absolute;
+  color: #fff;
+}
+.photo6 img {
+  width: 673px;
+  height: 300px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.photo6 {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.text6 {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+/* Destination area end */
+/* card area start */
+.tittel1 h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 100px;
+}
+.tittel1 p {
+  text-align: center;
+}
+.main-card {
+  display: flex;
+  gap: 24px;
+  padding-top: 60px;
+}
+.card {
+  background-color: #fbb56333;
+  width: 573px;
+  height: 284px;
+  border-radius: 8px;
+  border: 1px solid #fbb463c7;
+  padding-left: 20px;
+}
+.card img {
+  margin-top: 30px;
+}
+.card2 {
+  background-color: #29cef633;
+  width: 573px;
+  height: 284px;
+  border-radius: 8px;
+  border: 1px solid #fbb563;
+  padding-left: 20px;
+}
+.card img {
+  margin-top: 30px;
+}
+
+.card3 {
+  background-color: #fbb56333;
+  width: 573px;
+  height: 284px;
+  border-radius: 8px;
+  border: 1px solid #fbb463c7;
+  padding-left: 20px;
+  margin: auto;
+  margin-top: 24px;
+}
+.card img {
+  margin-top: 30px;
+}
+/* card area end */
+/* discount area start */
+.discount-card {
+  background-image: url(../image/Rectangle\ 12.png);
+  height: 500px;
+  width: 1170px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* .icon i {
+  color: #ff5400;
+}
+.icon {
+  display: flex;
+}
+ */
+.full-text {
+  background-color: #ffffffcc;
+  padding: 20px;
+
+  border-radius: 16px;
+  position: absolute;
+  right: 30px;
+  top: 80px;
+}
+.icon {
+  display: flex;
+}
+.max {
+  display: flex;
+  margin-right: 20px;
+}
+.max i {
+  margin-right: 10px;
+  margin-top: 20px;
+  color: #ff5400;
+  font-size: 10px;
+}
+.Price {
+  color: #ff5400;
+}
+/* discount area end */
