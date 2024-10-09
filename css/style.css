@@ -478,3 +478,24 @@ input {
   right: 140px;
   margin-top: 240px;
 }
+/* end */
+/* fotter start */
+.fotter {
+  margin-top: 110px;
+  text-align: center;
+  background-color: #1313180d;
+  width: 1440px;
+  height: 502px;
+}
+.logo img {
+  margin-top: 110px;
+}
+.icon i {
+  font-size: 15px;
+  margin: 10px;
+  width: 24.32px;
+  height: 42px;
+}
+.icon {
+  margin-left: 650px;
+}
